@@ -22,6 +22,21 @@ Go to:
 
 [extra-time-exercises/README.md](extra-time-exercises/README.md)
 
+## Grading Scripts
+
+Trainer-side grading scripts are available here:
+
+[grading/README.md](grading/README.md)
+
+Each exercise has a matching checker script, for example:
+
+```powershell
+.\grading\Grade-EX01.ps1
+.\grading\Grade-EX02.ps1
+```
+
+The grading scripts produce a clear score and PASS / PARTIAL / FAIL result. They validate expected files, CSV exports, AD objects, remoting output, job results, and optional cloud audit files.
+
 ## Source Alignment
 
 The topics are aligned with the public MicrosoftLearning AZ-040 GitHub repository:
