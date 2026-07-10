@@ -2,6 +2,86 @@
 
 This folder contains trainer-side PowerShell grading scripts for the 10 extra-time exercises.
 
+## Download and Install Git for Windows
+
+Before running the grading scripts, students or trainers can clone this repository onto **LON-CL1** using Git.
+
+1. Open Microsoft Edge on **LON-CL1**.
+2. Go to:
+
+   https://git-scm.com/install/
+
+3. Download **Git for Windows**.
+4. Run the installer.
+5. Accept the default installation options unless your trainer gives different instructions.
+6. After installation, open **Git Bash** from the Start menu.
+
+## Clone This Repository Using Git Bash
+
+In **Git Bash**, run:
+
+```bash
+git clone https://github.com/stv707/az040-powershell.git
+```
+
+This will create a local folder named:
+
+```text
+az040-powershell
+```
+
+By default, if you run Git Bash from your user profile, the repo will usually be downloaded to something like:
+
+```text
+C:\Users\Administrator\az040-powershell
+```
+
+or:
+
+```text
+C:\Users\<YourUserName>\az040-powershell
+```
+
+## Run the Grading Scripts
+
+After cloning the repository, open **Windows PowerShell as Administrator** on **LON-CL1**.
+
+Go to the grading folder. Example:
+
+```powershell
+cd C:\Users\Administrator\az040-powershell\grading
+```
+
+If your username or clone location is different, adjust the path.
+
+To check Exercise 01, run:
+
+```powershell
+.\Grade-EX01.ps1
+```
+
+To check another exercise, run the matching grading script:
+
+```powershell
+.\Grade-EX02.ps1
+.\Grade-EX03.ps1
+.\Grade-EX04.ps1
+```
+
+Each script prints a clear pass/fail style report and a final score.
+
+## If Script Execution Is Blocked
+
+If PowerShell blocks the grading script because of execution policy, run this in the same PowerShell window:
+
+```powershell
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+```
+
+Then run the grading script again.
+
+This bypass affects only the current PowerShell window.
+
 ## How to Use
 
 Run the checker for the matching exercise from **LON-CL1** after the student has completed the exercise.
